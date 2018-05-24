@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+ 	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<script  src ='https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js'> </script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/css/swiper.min.css"><script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/js/swiper.js"></script>
+
+	<title></title>
+	<style type="text/css">
+		*{
+			margin:0;
+			padding:0;
+			box-sizing: border-box;
+		}
+		html,body{
+			width: 100%;
+			height: 100%;
+		}
+		.warp{
+			width: 100%;
+			height: 100%;
+			position: relative;
+		}
+		.box{
+			width: 100%;
+			min-height: 50vw;
+			position: absolute;
+			top: 0;
+			
+		}
+		.box > .titleLogo{
+			width: 100%;
+			text-align: center;
+			height: 18.8vw;
+			margin-bottom: 10vw;
+		}
+		.box > .titleLogo > img{
+			width: 48.93vw;
+		}
+		.box >.cardW{
+			width: 100%;
+			min-height: 20vw;
+			text-align: center;
+		}
+		.box >.cardW > .card{
+			width: 80.8vw;
+			height: 112.8vw;
+			display: inline-block;
+			text-align: center;
+			 background-image:url('img/miner_share_voucher@2x.png');
+			 background-size: 100%;
+			 padding: 8.53vw 0 0 0;
+		}
+		.p1{
+			font-family: PingFangSC-Regular;
+			font-size: 4.8vw;
+			color: #9681F1;
+			letter-spacing: 0.68px;
+			text-align: center;
+		}
+		.p2{
+				font-size: 13.3vw;
+				font-weight: bold;
+			color: #9681F1;
+			letter-spacing: 1.9px;
+			text-align: center;
+		}
+		.btn1{
+			background-image: linear-gradient(-270deg,#9883F1  0%,  #FC77B1 100%);
+			width: 32vw;
+			height: 8.53vw;
+			border:none;
+			font-family: PingFangSC-Regular;
+			font-size: 3.73vw;
+			color: #FFFFFF;
+			letter-spacing: 0.53px;
+			text-align: center;
+			margin-top: 2vw;
+			margin-bottom: 3vw;
+			border-radius: 13.33vw;
+		}
+		.p4{
+			font-family: PingFangSC-Regular;
+			font-size: 3.2vw;
+			color: #DE77C2;
+			letter-spacing: 0.46px;
+			text-align: center;
+		}
+		.ercode{ 
+			 margin-top: 22vw;
+
+		}
+		.ercode > img{
+			width: 26.66vw;
+			height: 26.66vw;
+			margin-bottom: 2vw;
+		}
+		.p5{
+			font-family: PingFangSC-Regular;
+			font-size: 3.73vw;
+			color: #9CA8CA;
+			letter-spacing: 0.53px;
+			margin-bottom: 1vw;
+			text-align: center;
+		}
+		.p6{
+			font-family: PingFangSC-Regular;
+			font-size:3.2vw;
+			color: #9681F1;
+			letter-spacing: 0.46px;
+			text-align: center;
+		}
+		.top{
+			width: 100%;
+			height: 11.73vw;
+			color: white;
+			line-height: 13vw;
+			margin-bottom:12.33vw;
+
+		}
+		.top > p {
+			font-family: PingFangSC-Regular;
+			font-size:4.8vw;
+			color: #FFFFFF;
+			letter-spacing: 0.68px;
+			text-align: center;
+		}
+		.top > p > span{
+			float: left;
+		}
+	</style>
+</head>
+<body>
+
+	<div class="warp">
+		<img style="width: 100%;" src="img/miner_share_bg@3x.png">
+
+		<div class="box">
+			<div class="top">
+				<p>
+					<span><img style="width: 2.8vw;height: 4.5vw;position: absolute;left: 5.46vw;top: 3.5vw" src="img/return@2x.png"></span>
+					<span><img style="width: 3.73vw;height: 3.73vw;position: absolute;left: 15vw;top: 4vw;" src="img/close@2x.png"></span>
+					邀请码
+				</p>
+			</div>
+			<div class="titleLogo">
+				<img src="img/miner_share_title@3x.png">
+			</div>
+
+
+			
+			<div class="cardW">
+			
+				<div class="card">
+						<p class="p1">您的邀请码</p>
+						<p class="p2" id="bar">AA4W9C</p>
+						<button class="btn1" data-clipboard-action="copy" data-clipboard-target="#bar">复制</button>			
+						<p class="p4">好友下载注册一次炉石可获300LSC</p>
+						<div class="ercode">
+							<img src="#">
+						</div>
+						<p class="p5">扫码下载炉石星球</p>
+						<p class="p6">获取炉石参与二手物品交换</p>
+				</div>
+			</div>
+
+			
+		</div>
+	</div>
+
+
+
+
+</body>
+<script type="text/javascript">
+	new ClipboardJS('.btn');
+</script>
+
+</html>

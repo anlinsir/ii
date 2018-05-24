@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+ 	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/css/swiper.min.css"><script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/js/swiper.js"></script>
+	<title></title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+
+		}
+		html,body{
+			width: 100%;
+			height: 100%;
+		}
+		.Warp{
+			width: 100%;
+			position: relative;
+			height: 100%;
+		}
+		.warp{
+			position: absolute;
+			top:0;
+			width: 100%;
+			min-height: 100%;
+			
+			padding: 30.26vw 0 0 0;
+		}
+		.top{
+			width: 100%;
+			height: 46.53vw;
+			
+			text-align: center;
+		}
+		.top >.logo{
+			width: 24.13vw;
+			height: 24.13vw;
+			border-radius: 4.416vw
+		}
+		.top >.text{
+			width: 31vw;
+			height: 8.8vw;
+			
+			margin-top: 4vw;
+		}
+		.downbtn{
+			width: 100%;
+			min-height:10vw; 
+			text-align: center;
+		}
+		.downbtn > button{
+			background-image: linear-gradient(-270deg, #9883F1  0%, #FC77B1 100%);
+			border-radius: 13.33vw;
+			border:none;
+			width: 68vw;
+			height: 11.73vw;
+			font-size: 4.5vw;
+			color: #FFFFFF;
+			letter-spacing: 0.68px;
+			text-align: center;
+			outline: none;
+			margin-bottom:5vw;
+		}
+		.ios > img{
+			width: 5.2vw;
+			height: 6.4vw;
+			vertical-align: bottom;
+			margin-right: 1vw;
+
+		}
+		.android >img{
+			width: 5.2vw;
+			height: 5.86vw;
+			vertical-align: bottom;
+			margin-right: 1vw;
+
+
+
+		}
+		.lsc{
+			margin-top: 28vw;
+			width: 100%;
+			min-height: 10vw;
+			text-align: center;
+			margin-bottom: 15vw;
+		}
+		.lsc > p{
+			margin-bottom: 2vw;
+			font-size: 4.8vw;
+			color: #FFFFFF;
+			letter-spacing: 0.68px;
+			text-align: center;
+		}
+		.lsc >img{
+
+		}
+		.info{
+			width: 100%;
+			min-height: 20vw;
+			    margin-top: 30vw;
+			padding: 0 4vw 0 4vw
+		}
+		.info >p {
+			margin-top: 5vw;
+			margin-bottom: 15vw;
+
+			font-size: 4.2vw;
+			color: #9CA8CA;
+			letter-spacing: 0.61px;
+		}
+		.info >img{
+			height: 5.46vw;
+		}
+		.ani{
+			animation: demo 2s infinite;
+		}
+		@keyframes demo {
+			0%{
+				transform: translateY(1vw);
+			}
+			50%{
+				transform: translateY(2vw);
+			}
+			100%{
+				transform: translateY(1vw);
+			}
+		}
+
+		.weixin{
+			position: fixed;
+			top: 0;
+			width: 100%;
+			height: 100%;
+
+			z-index: 10;
+			background-color: rgba(0,0,0,.4);
+		}
+		.weixin > .robot{
+			width: 25.46vw;
+			height: 26.8vw;
+			opacity: 1;
+			position: absolute;
+			right: 16.1vw;
+			top: 11.33vw;
+
+		}
+		.line{
+			width: 11.33vw;
+			height: 21.46vw;
+			position: absolute;
+		    right: 4.5vw;
+			top: 1vw;
+		}
+		.sprechen{
+			width: 33.86vw;
+			height: 16.26vw;
+			position: absolute;
+			left: 21.6vw;
+			top: 4.4vw;
+			text-align: center;
+			font-size: 3vw;
+			padding: 4vw 4vw;
+			color: #1C243A;
+			text-decoration: none;
+			letter-spacing: 0.53px;
+			z-index: 11;
+			background-image: url('img/download_bubble@2x.png');
+			background-size: 100%;
+		}
+	</style>
+</head>
+<body>
+	<div class="Warp">
+
+		<div id='wein' style="display: none;" class="weixin">
+			<img class="robot" src="img/robot@2x.png">
+			<img class="line" src="img/download_direction@2x.png">
+			<p class="sprechen">点击箭头这里，在浏览器中打开</p>
+		</div>
+
+
+		<img style="width: 100%;" src="img/download_bg@3x.png">
+		<div class="warp swiper-container">
+			<div class="top">
+				<img class="logo" src="img/page-1-logo.png"><br>
+				<img class='text' src="img/lsc.png">
+			</div>
+			<div class="downbtn">
+				<button class="ios">
+					<img src="img/download_ios@2x.png">
+					IOS下载
+				</button>
+				<button class="android">
+					<img src="img/download_android@2x.png">
+					Android下载
+				</button>	
+			</div>
+
+			<div class="lsc">
+				<p>了解炉石星球</p>
+				<img class="ani" id='an' style="width: auto;height: 6.8vw;" src="img/download_arrow@3x.png">
+			</div>
+		
+			<div class="info">
+				<img src="img/wasIstlsc.png">
+				<p>炉石星球是一个基于区块链和智能合约的闲置交易市场平台，用户通过星球任何活动与挖矿的方式获得炉石，炉石可用于平台上矿机购买和闲置物品交换。</p>
+				<img src="img/wasist（LSC）.png">
+				<p>炉石（LSC）是基于ERC20的星球代币，是基于个人在星球活动产生的奖励。可用于闲置物品的交换。算力是用户获取炉石的影响因子，算力越高，获得的炉石越多。炉石每天产量固定，每一年每一天产量约20万个，每2年减半一次，按照用户当前的算力值在星球基地总的算力值占比分配炉石。</p>
+			</div>
+
+
+		</div>
+	</div>
+</body>
+<script type="text/javascript">
+	var wein  = document.getElementById('wein'),
+	an = document.getElementById('an'),
+	type = -1;
+	var d = function(e){
+		switch (e.type){
+			case 'touchstart':
+					type = 1
+				break;
+			case 'touchmove':
+					 type = 0
+				break;
+			case 'touchend':
+				if(type == 0){
+					console.log('move')
+					type = -1
+				}
+				if(type == 1){
+					console.log('start')
+					type = -1
+
+				}
+				break;
+		}
+
+	}
+
+	an.ontouchmove=d
+	an.ontouchstart = d
+	an.ontouchend = d
+
+document.addEventListener('touchmove', function (event) { event.preventDefault();　　　　　　　　　　　　　　　　
+
+
+
+})
+		
+	 
+	 var ua = navigator.userAgent.toLowerCase();  
+    if(ua.match(/MicroMessenger/i)=="micromessenger") {   //微信打开时
+
+
+			wein.style.display = 'block'
+
+    }
+	if(wein.style.display == 'block'){
+		document.documentElement.style.overflow = 'hidden'
+	}
+	window.onscroll = function(e){
+
+		console.log(document.documentElement.scrollTop)
+	}
+</script>
+</html>

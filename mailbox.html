@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+ 	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<meta charset="utf-8">
+	<title>邮箱</title>
+	<style type="text/css">
+		* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html, body { width: 100%; height: 100%; overflow: auto; }
+
+.warp { width: 100%; height: 100%; }
+.warp > .topWarp { width: 100%; height: 94px; background: linear-gradient(#3c476a, #28314b); }
+.warp > .topWarp > .top { width: 1100px; margin: auto; height: 94px; background-image: url(img/email_bg@3x.png); background-repeat: no-repeat; background-position: 220px 0px; }
+.warp > .topWarp > .top > .topLeft { height: 94px; position: relative; }
+.warp > .topWarp > .top > .topLeft > .logo { width: 85px; height: 85px; margin-top: 5px; border-radius: 10px; }
+.warp > .topWarp > .top > .topLeft > .text { transform: translateX(19px) translateY(-16px); width: 140px; height: 50px; }
+.warp > .topWarp > .top > .topLeft > span { position: absolute; top: 50%; color: #F4F6FA; right: 0; font-size: 15px; transform: translateY(-50%); }
+.warp > .main { overflow: auto; width: 1100px; min-height: 300px; margin: auto; font-size: 16px; font-family: PingFangSC-Regular; font-size: 16px; color: #333333; letter-spacing: 0.3px; padding: 20px 0 0 10px; }
+.warp > .main a { display: inline-block; }
+.warp > .main > .mb1 { margin-bottom: 10px; }
+.warp > .main > .mb2 { margin-bottom: 20px; }
+.warp > .main .und { text-decoration: underline; }
+.warp > .main .warning { background: #FEFAEC; border: 1px solid #FDF3D1; height: 48px; line-height: 48px; padding-left: 20px; }
+.warp > .main .dur { font-size: 13px; color: #E53600; margin-bottom: 5px; margin-bottom: 40px; letter-spacing: 0.25px; }
+.warp > .main .f13 { font-size: 13px; margin-bottom: 5px; }
+.warp > .main .coll1 { font-family: PingFangSC-Regular; font-size: 14px; letter-spacing: 0.27px; }
+.warp > .main .coll2 { font-family: PingFangSC-Regular; font-size: 13px; color: #333333; letter-spacing: 0.25px; }
+.warp > .main .btn { background-image: linear-gradient(-270deg, #9883F1 0%, #FC77B1 100%); border: none; width: 95px; height: 40px; font-family: PingFangSC-Regular; font-size: 14px; color: #FFFFFF; letter-spacing: 0.27px; outline: none; cursor: pointer; border-radius: 100px; }
+.warp > .main .fz4 { font-size: 14px; }
+
+@media screen and (max-width: 1150px) { .warp { width: 100%; height: 100%; }
+  .warp > .topWarp { width: 100%; height: 12.5vw; }
+  .warp > .topWarp > .top { width: 100%; height: 12.5vw; margin: auto; background-image: url("img/email_bg@3x.png"); background-size: 100% 11.3vw; background-repeat: no-repeat; background-position: 0; transform: none; }
+  .warp > .topWarp > .top > .topLeft { width: 12.5vw; }
+  .warp > .topWarp > .top > .topLeft > .logo { width: 11vw; margin-top: 0.75vw; height: 11vw; margin-left: 2.5vw; }
+  .warp > .topWarp > .top > .topLeft > .text { transform: translateX(16vw) translateY(-10.5vw); width: 21vw; height: 8vw; }
+  .warp > .topWarp > .top > .topLeft > span { position: absolute; top: 4vw; right: -85vw; font-size: 3.5vw; transform: none; }
+  .warp > .main { padding: 3.5vw 3.5vw 0  3.5vw; width: 100%; word-wrap: break-word; font-size: 4vw; }
+  .warp > .main > .warning { background: #FEFAEC; border: 1px solid #FDF3D1; height: 17vw; line-height: 6vw; padding: 2vw; }
+  .warp > .main .coll1 { font-family: PingFangSC-Regular; font-size: 3vw; letter-spacing: 0.27px; }
+  .warp > .main .coll2 { font-family: PingFangSC-Regular; font-size: 3vw; color: #333333; letter-spacing: 0.25px; }
+  .warp > .main .dur { font-size: 2.7vw; color: #E53600; }
+  .warp > .main .f13 { font-size: 2.7vw; }
+  .warp > .main .fz4 { font-size: 2.7vw; }
+  .warp > .main .btn { background-image: linear-gradient(-270deg, #9883F1 0%, #FC77B1 100%); border: none; width: 20vw; height: 8vw; font-family: PingFangSC-Regular; font-size: 2.7vw; color: #FFFFFF; letter-spacing: 0.27px; outline: none; cursor: pointer; border-radius: 8.3vw; } }
+
+
+
+	</style>
+</head>
+<body>
+
+	<div class="warp">
+			<div class="topWarp">
+				<div class="top">
+					<div class="topLeft">
+						<img class="logo" src="img/page-1-logo.png">
+						<img class="text" src='img/miner_share_title@3x.png'>
+						<span>提现邮件确认</span>
+					</div>
+					<div class="topRight"></div>
+				</div>
+			</div>
+
+
+			<div class="main">
+				<p class="mb2">提现申请确认：</p>
+				<p class="mb1">您好，您的LSC账户申请转出 <span class="und">20.98036178 LSC，</span></p>
+				<p class="mb2">手续费为：<span class="und">0.1000000 ETH</span></p>
+				<p class="mb1">转出地址为：</p>
+				<p class="mb2" style="text-decoration: underline;"><b>0x99A3417b2FCa03aaF1F36f4bC7e6acD8934B600f</b></p>
+				<p class="mb2 fz4" >若为本人提现请点击下面按钮进行确认</p>
+				<button class="btn" id='btn' style="margin-bottom: 5px;">确认提现</button>
+				<p class="dur">请注意：邮件有效期为30分钟。</p>
+				<p class="f13">若点击上方按钮无反应，请复制下面链接到浏览器打开：</p>
+				<a class="mb2" class="coll1" href="http://inziqi.com/information.html">http://inziqi.com/information.html</a>
+				<p class="mb2 warning coll1">如您为进行提现操作，请立即登录账号修改密码，或联系炉石星球客服。</p>
+				<p  class="mb1 coll2" >本邮件为系统发送，请勿回复。</p>
+				<p class="coll2">炉石星球服务团队</p>
+
+			</div>
+
+	</div>
+
+
+
+</body>
+<script type="text/javascript">
+	btn.addEventListener('click',function(){
+		alert('FDGDGD')
+	})
+</script>
+</html>

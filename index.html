@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+ 	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/css/swiper.min.css"><script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/js/swiper.js"></script>
+<style type="text/css">
+	.swiper-container{
+		width: 300px;
+		height: 50px;
+	}
+	.swiper-slide{
+		width: 300px;
+		height: 50px;
+	}
+</style>
+</head>
+<body>
+	
+<div class="swiper-container">
+  <div  class="swiper-wrapper">
+    <div style="background-color: #000" class="swiper-slide"></div>
+    <div class="swiper-slide" style="background-color: red">slider2</div>
+    <div class="swiper-slide" style="background-color: #334" >slider3</div>
+  </div>
+</div>
+
+
+</body>
+
+<script type="text/javascript">
+	
+	var swiper1 = new Swiper('#swiper1');
+	var swiper2 = new Swiper('#swiper2');
+	var swiper3 = new Swiper('#swiper3');
+	var mySwiper = new Swiper('.swiper-container', {
+	 direction : 'vertical',
+})
+</script>
+</html>
