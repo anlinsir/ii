@@ -27,7 +27,7 @@
 			width: 100%;
 			min-height: 100%;
 			
-			padding: 30.26vw 0 0 0;
+			padding: 10vw 0 0 0;
 		}
 		.top{
 			width: 100%;
@@ -81,7 +81,7 @@
 
 		}
 		.lsc{
-			margin-top: 28vw;
+			margin-top: 15vw;
 			width: 100%;
 			min-height: 10vw;
 			text-align: center;
@@ -100,7 +100,7 @@
 		.info{
 			width: 100%;
 			min-height: 20vw;
-			    margin-top: 30vw;
+			    margin-top: 10vw;
 			padding: 0 4vw 0 4vw
 		}
 		.info >p {
@@ -183,7 +183,9 @@
 
 
 		<img style="width: 100%;" src="img/download_bg@3x.png">
-		<div class="warp swiper-container">
+		<div class="warp swiper-container" style="height: 100%;">
+			<div  class="swiper-wrapper">
+				<div style="height: 50%;" class="swiper-slide">
 			<div class="top">
 				<img class="logo" src="img/page-1-logo.png"><br>
 				<img class='text' src="img/lsc.png">
@@ -203,19 +205,31 @@
 				<p>了解炉石星球</p>
 				<img class="ani" id='an' style="width: auto;height: 6.8vw;" src="img/download_arrow@3x.png">
 			</div>
-		
+			</div>
+			<div style="height: 50%;" class="swiper-slide">
 			<div class="info">
 				<img src="img/wasIstlsc.png">
 				<p>炉石星球是一个基于区块链和智能合约的闲置交易市场平台，用户通过星球任何活动与挖矿的方式获得炉石，炉石可用于平台上矿机购买和闲置物品交换。</p>
 				<img src="img/wasist（LSC）.png">
 				<p>炉石（LSC）是基于ERC20的星球代币，是基于个人在星球活动产生的奖励。可用于闲置物品的交换。算力是用户获取炉石的影响因子，算力越高，获得的炉石越多。炉石每天产量固定，每一年每一天产量约20万个，每2年减半一次，按照用户当前的算力值在星球基地总的算力值占比分配炉石。</p>
 			</div>
+			</div>
 
+			</div>
 
 		</div>
 	</div>
 </body>
 <script type="text/javascript">
+	
+	var swiper1 = new Swiper('#swiper1');
+	var swiper2 = new Swiper('#swiper2');
+	var swiper3 = new Swiper('#swiper3');
+	var mySwiper = new Swiper('.swiper-container', {
+	 direction : 'vertical',
+})
+
+
 	var wein  = document.getElementById('wein'),
 	an = document.getElementById('an'),
 	type = -1;
